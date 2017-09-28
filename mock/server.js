@@ -2,7 +2,7 @@
 * @Author: WKongL
 * @Date:   2017-08-26 15:53:43
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-09-15 00:03:04
+* @Last Modified time: 2017-09-28 17:53:08
 */
 
 var app = require('koa')();
@@ -70,7 +70,7 @@ router.get('/api/detail/info/:id', function *(next) {
     const id = params.id
 
     console.log('商户id: ' + id)
-
+    //根据ID查出对应的商户
     const dataInfo = detailInfo.find((item) =>{
         if(item.id === id){
             return item
@@ -90,7 +90,15 @@ router.get('/api/detail/comment/:page/:id', function *(next) {
     console.log('商户id: ' + id)
     console.log('当前页数: ' + page)
 
-    this.body = detailComment
+    //根据ID查出对应的商户评论
+    let commentInfo = {}
+    commentInfo = detailComment.find((item) =>{
+        if(item.id === id){
+            return item
+        }
+    })
+    // this.body = detailComment
+    this.body = commentInfo
 })
 
 // 订单列表

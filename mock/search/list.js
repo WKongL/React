@@ -8,7 +8,7 @@ module.exports = {
             price: '150',
             distance: '120m',
             mumber: '389',
-            id: Math.random().toString().slice(2)
+            id: '0006'
         },
         {
             img: '../../app/image/Search/138012-20161022145750123-1745839503.jpg',
@@ -17,7 +17,7 @@ module.exports = {
             price: '113',
             distance: '140m',
             mumber: '689',
-            id: Math.random().toString().slice(2)
+            id: '0007'
         },
         {
             img: '../../app/image/Search/138012-20161022145755545-1770557408.jpg',
@@ -26,7 +26,7 @@ module.exports = {
             price: '92',
             distance: '160',
             mumber: '106',
-            id: Math.random().toString().slice(2)
+            id: '0008'
         },
         {
             img: '../../app/image/Search/138012-20161022145800732-576947550.jpg',
@@ -35,7 +35,7 @@ module.exports = {
             price: '90',
             distance: '160',
             mumber: '58',
-            id: Math.random().toString().slice(2)
+            id: '0009'
         },
         {
             img: '../../app/image/Search/138012-20161022145806201-1193851669.jpg',
@@ -44,7 +44,7 @@ module.exports = {
             price: '85',
             distance: '160',
             mumber: '1426',
-            id: Math.random().toString().slice(2)
+            id: '0010'
         },
         {
             img: '../../app/image/Search/138012-20161022150855185-1659375763.jpg',
@@ -53,7 +53,7 @@ module.exports = {
             price: '113',
             distance: '140m',
             mumber: '689',
-            id: Math.random().toString().slice(2)
+            id: '0011'
         },
         {
             img: '../../app/image/Search/138012-20161022145800732-576947550.jpg',
@@ -62,7 +62,7 @@ module.exports = {
             price: '90',
             distance: '160',
             mumber: '58',
-            id: Math.random().toString().slice(2)
+            id: '0012'
         }
     ]
 }

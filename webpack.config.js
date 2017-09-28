@@ -2,7 +2,7 @@
 * @Author: WKongL
 * @Date:   2017-08-13 12:22:41
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-08-26 17:25:12
+* @Last Modified time: 2017-09-24 21:05:37
 */
 var path    = require('path'); 
 var pkg     = require('./package.json');
@@ -28,8 +28,8 @@ var config = {
     output : {
         path : __dirname +'/dist',
         //publicPath : '/dist/',
-        // filename:'js/[name].[chunkhash:8].js'
-        filename:'js/[name].js'
+        filename:'js/[name].[chunkhash:8].js'
+        // filename:'js/[name].js'
     },
     resolve:{
         extensions:['.js','.jsx']
@@ -53,13 +53,13 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('index')),
         new webpack.BannerPlugin("Copyright by WKongL"),
         //提取CSS
-        // new ExtractTextPlugin('css/[name].[chunkhash:8].css'),
-        new ExtractTextPlugin('css/[name].css'),
+        new ExtractTextPlugin('css/[name].[chunkhash:8].css'),
+        // new ExtractTextPlugin('css/[name].css'),
         //提取公共代码
         new webpack.optimize.CommonsChunkPlugin({
             name : 'common',
-            // filename : 'js/[name].[chunkhash:8].js'
-            filename : 'js/[name].js'
+            filename : 'js/[name].[chunkhash:8].js'
+            // filename : 'js/[name].js'
         }),
         // 可在业务 js 代码中使用 __DEV__ 判断是否是dev模式（dev模式下可以提示错误、测试报告等, production模式不提示）
         new webpack.DefinePlugin({

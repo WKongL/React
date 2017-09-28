@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom'
 
 import * as userInfoActionsFormOtherFile from '../../actions/userinfo'
 
-import Header from '../../components/header/index'
+import Header from '../../components/Header/index'
 import CurrentCity from '../../components/CurrentCity/index'
 import CityList from '../../components/CityList/index'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
-import SearchHeader from '../../Components/SearchHeader/index'
+import SearchHeader from '../../components/SearchHeader/index'
 import SearchList from './subpage/list'
 
 class Search extends React.Component{
